@@ -16,3 +16,14 @@ function randomColor() {
   var color = "rgb(" + r + "," + g + "," + b + ")";
   return color;
 }
+// 3.生成随机16进制颜色
+function randomHexColor1(){
+  var color =['#'];
+  for(var i=0;i<6;i++){
+    var r=Math.floor(Math.random()*16).toString(16);
+    color.push(r)
+  }
+  return color.join('')
+}
+console.log( randomHexColor1());
+
